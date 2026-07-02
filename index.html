@@ -1,0 +1,589 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mirshad P | Full Stack Developer Portfolio</title>
+  <meta name="description" content="Portfolio of Mirshad, a passionate Full Stack Developer specializing in Node.js, MySQL, HTML, CSS, and JavaScript. Explore payroll systems, REST APIs, and responsive design showcases.">
+  
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="style.css">
+  
+  <!-- Lucide Icons CDN -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body>
+
+  <!-- --- Header / Navigation Bar --- -->
+  <header>
+    <div class="nav-container">
+      <a href="#hero" class="logo">
+        <span class="gradient-text">Mirshad.</span>
+      </a>
+      
+      <nav class="nav-links" id="nav-links">
+        <a href="#hero" class="active">Home</a>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      
+      <div class="nav-controls">
+        <button id="theme-toggle" class="theme-toggle-btn" aria-label="Toggle Theme">
+          <i data-lucide="moon" class="moon-icon"></i>
+          <i data-lucide="sun" class="sun-icon"></i>
+        </button>
+        <button class="menu-btn" id="menu-btn" aria-label="Open Mobile Menu">
+          <i data-lucide="menu"></i>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- --- Hero Section --- -->
+  <section id="hero">
+    <div class="hero-grid">
+      <div class="hero-content">
+        <h2>Welcome to my portfolio</h2>
+        <h1>Hi, I'm <span class="gradient-text">Mirshad P</span></h1>
+        
+        <div class="typewriter-container">
+          <span>I'm a&nbsp;</span>
+          <span class="typed-text">Full Stack Developer</span>
+          <span class="cursor"></span>
+        </div>
+        
+        <p class="bio">
+          A motivated and enthusiastic fresher in the full-stack development space. 
+          I specialize in building scalable web structures using <strong>Node.js</strong> and <strong>MySQL</strong>, 
+          alongside clean, responsive interfaces with <strong>HTML, CSS, and JavaScript</strong>.
+        </p>
+        
+        <div class="hero-ctas">
+          <a href="#projects" class="btn btn-primary">
+            View My Work <i data-lucide="arrow-right"></i>
+          </a>
+          <a href="#contact" class="btn btn-secondary">
+            Let's Talk <i data-lucide="mail"></i>
+          </a>
+        </div>
+      </div>
+      
+      <!-- Premium SVG Developer Workspace Illustration -->
+      <div class="hero-graphic">
+        <div class="hero-svg-wrapper">
+          <svg viewBox="0 0 500 500" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <!-- Background Orbits / Glowing circles -->
+            <circle cx="250" cy="250" r="180" stroke="url(#accentGrad)" stroke-width="1.5" stroke-dasharray="8 8" opacity="0.3"/>
+            <circle cx="250" cy="250" r="220" stroke="url(#accentGrad)" stroke-width="1" stroke-dasharray="4 12" opacity="0.15"/>
+            <circle cx="250" cy="250" r="100" fill="url(#glowGrad)" opacity="0.1"/>
+            
+            <!-- Tech Nodes (Floating Hexagons/Circles) -->
+            <!-- Node.js -->
+            <g transform="translate(90, 150)">
+              <circle cx="24" cy="24" r="24" fill="#1f2937" stroke="#3b82f6" stroke-width="2"/>
+              <text x="24" y="29" font-family="'Outfit'" font-size="14" fill="#3b82f6" font-weight="700" text-anchor="middle">JS</text>
+            </g>
+            <!-- Node Icon 2 (MySQL Database Cylinder icon style) -->
+            <g transform="translate(370, 160)">
+              <circle cx="24" cy="24" r="24" fill="#1f2937" stroke="#06b6d4" stroke-width="2"/>
+              <path d="M16 16C16 14.5 19.6 14 24 14C28.4 14 32 14.5 32 16M16 16V22C16 23.5 19.6 24 24 24C28.4 24 32 23.5 32 22V16M16 16C16 17.5 19.6 18 24 18C28.4 18 32 17.5 32 16M16 22V28C16 29.5 19.6 30 24 30C28.4 30 32 29.5 32 28V22" stroke="#06b6d4" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </g>
+            <!-- Node Icon 3 (HTML/CSS tag style) -->
+            <g transform="translate(130, 360)">
+              <circle cx="24" cy="24" r="24" fill="#1f2937" stroke="#8b5cf6" stroke-width="2"/>
+              <path d="M16 20L12 24L16 28M32 20L36 24L32 28M26 14L22 34" stroke="#8b5cf6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </g>
+            
+            <!-- Central Computer Monitor -->
+            <g transform="translate(140, 180)">
+              <!-- Screen Base -->
+              <rect x="20" y="0" width="180" height="120" rx="8" fill="#1e293b" stroke="#475569" stroke-width="4"/>
+              <rect x="25" y="5" width="170" height="110" rx="4" fill="#0f172a"/>
+              <!-- Stand -->
+              <path d="M90 120H130L140 150H80L90 120Z" fill="#475569"/>
+              <rect x="65" y="148" width="90" height="6" rx="3" fill="#475569"/>
+              
+              <!-- Code Lines inside Monitor -->
+              <rect x="35" y="20" width="40" height="6" rx="3" fill="#8b5cf6"/>
+              <rect x="80" y="20" width="60" height="6" rx="3" fill="#06b6d4"/>
+              <rect x="35" y="35" width="85" height="6" rx="3" fill="#10b981"/>
+              <rect x="125" y="35" width="30" height="6" rx="3" fill="#f59e0b"/>
+              <rect x="35" y="50" width="50" height="6" rx="3" fill="#ec4899"/>
+              <rect x="35" y="65" width="110" height="6" rx="3" fill="#3b82f6"/>
+              <rect x="35" y="80" width="75" height="6" rx="3" fill="#10b981"/>
+              <circle cx="155" cy="83" r="5" fill="#f59e0b"/>
+              
+              <!-- Mini Database inside screen -->
+              <rect x="150" y="15" width="20" height="20" rx="3" fill="#1f2937" stroke="#475569" stroke-width="1"/>
+            </g>
+            
+            <!-- Laptop (Foreground overlay) -->
+            <g transform="translate(180, 290)">
+              <rect x="10" y="10" width="120" height="70" rx="6" fill="#0f172a" stroke="#64748b" stroke-width="3"/>
+              <!-- Screen -->
+              <rect x="15" y="15" width="110" height="55" rx="3" fill="#1e1b4b"/>
+              <!-- Code lines -->
+              <line x1="25" y1="25" x2="65" y2="25" stroke="#f43f5e" stroke-width="3" stroke-linecap="round"/>
+              <line x1="25" y1="35" x2="85" y2="35" stroke="#38bdf8" stroke-width="3" stroke-linecap="round"/>
+              <line x1="25" y1="45" x2="50" y2="45" stroke="#a855f7" stroke-width="3" stroke-linecap="round"/>
+              <line x1="25" y1="55" x2="95" y2="55" stroke="#34d399" stroke-width="3" stroke-linecap="round"/>
+              <!-- Keyboard Base -->
+              <path d="M0 80H140L150 95H-10L0 80Z" fill="#334155" stroke="#475569" stroke-width="2"/>
+              <line x1="45" y1="88" x2="95" y2="88" stroke="#1e293b" stroke-width="3" stroke-linecap="round"/>
+            </g>
+
+            <!-- Definitions for Gradients -->
+            <defs>
+              <linearGradient id="accentGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                <stop offset="0%" stop-color="#8b5cf6" />
+                <stop offset="100%" stop-color="#06b6d4" />
+              </linearGradient>
+              <radialGradient id="glowGrad" cx="50%" cy="50%" r="50%">
+                <stop offset="0%" stop-color="#8b5cf6" stop-opacity="1" />
+                <stop offset="100%" stop-color="#06b6d4" stop-opacity="0" />
+              </radialGradient>
+            </defs>
+          </svg>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- --- About Me Section --- -->
+  <section id="about" class="reveal">
+    <h2 class="section-title">About Me</h2>
+    <div class="about-grid">
+      <div class="about-card glass-panel">
+        <h3 style="font-size: 1.8rem; margin-bottom: 20px;">
+          Turning Ideas into <span class="gradient-text">Functional Code</span>
+        </h3>
+        <div class="about-description">
+          <p>
+            Hello! I'm <strong>Mirshad</strong>. As a fresher in full-stack development, I am fueled by a deep curiosity 
+            for resolving complex logical puzzles and building structured, modern backends.
+          </p>
+          <p>
+            My key strength lies in bridging clean database architectures with dynamic interfaces. Over the course of 
+            my training and independent studies, I have focused heavily on mastering <strong>Node.js, Express, and MySQL</strong> 
+            to create modular applications that deliver seamless experiences.
+          </p>
+          <p>
+            I'm looking for opportunities to work as a junior developer or intern in a collaborative team 
+            environment where I can contribute to real-world code bases, write scalable APIs, and learn from seasoned engineers.
+          </p>
+        </div>
+      </div>
+      
+      <div class="about-info-grid">
+        <h3 style="font-size: 1.5rem; margin-bottom: 24px; font-family: var(--font-heading);">Key Professional Focus</h3>
+        <div class="about-highlights">
+          <div class="highlight-item">
+            <div class="highlight-icon">
+              <i data-lucide="server"></i>
+            </div>
+            <div class="highlight-info">
+              <h4>Backend Architectures</h4>
+              <p>Writing clean routing systems, controllers, and middlewares in Node.js.</p>
+            </div>
+          </div>
+          
+          <div class="highlight-item">
+            <div class="highlight-icon">
+              <i data-lucide="database"></i>
+            </div>
+            <div class="highlight-info">
+              <h4>Database Management</h4>
+              <p>Designing structured relational tables, indexes, and queries using MySQL.</p>
+            </div>
+          </div>
+          
+          <div class="highlight-item">
+            <div class="highlight-icon">
+              <i data-lucide="layout"></i>
+            </div>
+            <div class="highlight-info">
+              <h4>Responsive Frontend</h4>
+              <p>Crafting responsive semantic layouts using modern CSS (Grid/Flexbox) and JavaScript.</p>
+            </div>
+          </div>
+          
+          <div class="highlight-item">
+            <div class="highlight-icon">
+              <i data-lucide="git-branch"></i>
+            </div>
+            <div class="highlight-info">
+              <h4>Version Control</h4>
+              <p>Proficient with Git workflows, managing branches, and collaborating on GitHub.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- --- Skills Section --- -->
+  <section id="skills" class="reveal">
+    <h2 class="section-title">My Skills</h2>
+    
+    <div class="skills-container">
+      <!-- Frontend Category -->
+      <div class="skills-category glass-panel">
+        <h3><i data-lucide="monitor"></i> Frontend Development</h3>
+        <div class="skills-list">
+          <div class="skill-item">
+            <div class="skill-info">
+              <span class="skill-name">HTML5 / Semantic Web</span>
+              <span class="skill-percentage">90%</span>
+            </div>
+            <div class="skill-bar-bg">
+              <div class="skill-bar-fill" data-width="90"></div>
+            </div>
+          </div>
+          
+          <div class="skill-item">
+            <div class="skill-info">
+              <span class="skill-name">CSS3 / Flexbox & Grid</span>
+              <span class="skill-percentage">85%</span>
+            </div>
+            <div class="skill-bar-bg">
+              <div class="skill-bar-fill" data-width="85"></div>
+            </div>
+          </div>
+          
+          <div class="skill-item">
+            <div class="skill-info">
+              <span class="skill-name">JavaScript (ES6+)</span>
+              <span class="skill-percentage">80%</span>
+            </div>
+            <div class="skill-bar-bg">
+              <div class="skill-bar-fill" data-width="80"></div>
+            </div>
+          </div>
+          
+          <div class="skill-item">
+            <div class="skill-info">
+              <span class="skill-name">Responsive Web Design</span>
+              <span class="skill-percentage">85%</span>
+            </div>
+            <div class="skill-bar-bg">
+              <div class="skill-bar-fill" data-width="85"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Backend Category -->
+      <div class="skills-category glass-panel">
+        <h3><i data-lucide="server"></i> Backend Engineering</h3>
+        <div class="skills-list">
+          <div class="skill-item">
+            <div class="skill-info">
+              <span class="skill-name">Node.js Runtime</span>
+              <span class="skill-percentage">75%</span>
+            </div>
+            <div class="skill-bar-bg">
+              <div class="skill-bar-fill" data-width="75"></div>
+            </div>
+          </div>
+          
+          <div class="skill-item">
+            <div class="skill-info">
+              <span class="skill-name">Express.js Framework</span>
+              <span class="skill-percentage">70%</span>
+            </div>
+            <div class="skill-bar-bg">
+              <div class="skill-bar-fill" data-width="70"></div>
+            </div>
+          </div>
+          
+          <div class="skill-item">
+            <div class="skill-info">
+              <span class="skill-name">RESTful APIs Integration</span>
+              <span class="skill-percentage">80%</span>
+            </div>
+            <div class="skill-bar-bg">
+              <div class="skill-bar-fill" data-width="80"></div>
+            </div>
+          </div>
+          
+          <div class="skill-item">
+            <div class="skill-info">
+              <span class="skill-name">Asynchronous Programming</span>
+              <span class="skill-percentage">75%</span>
+            </div>
+            <div class="skill-bar-bg">
+              <div class="skill-bar-fill" data-width="75"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Database & Tools Category -->
+      <div class="skills-category glass-panel">
+        <h3><i data-lucide="database"></i> Databases & Tools</h3>
+        <div class="skills-list">
+          <div class="skill-item">
+            <div class="skill-info">
+              <span class="skill-name">MySQL / Relational Design</span>
+              <span class="skill-percentage">80%</span>
+            </div>
+            <div class="skill-bar-bg">
+              <div class="skill-bar-fill" data-width="80"></div>
+            </div>
+          </div>
+          
+          <div class="skill-item">
+            <div class="skill-info">
+              <span class="skill-name">SQL Queries / Schema Optimization</span>
+              <span class="skill-percentage">75%</span>
+            </div>
+            <div class="skill-bar-bg">
+              <div class="skill-bar-fill" data-width="75"></div>
+            </div>
+          </div>
+          
+          <div class="skill-item">
+            <div class="skill-info">
+              <span class="skill-name">Git & GitHub Workflow</span>
+              <span class="skill-percentage">75%</span>
+            </div>
+            <div class="skill-bar-bg">
+              <div class="skill-bar-fill" data-width="75"></div>
+            </div>
+          </div>
+          
+          <div class="skill-item">
+            <div class="skill-info">
+              <span class="skill-name">npm (Node Package Manager)</span>
+              <span class="skill-percentage">80%</span>
+            </div>
+            <div class="skill-bar-bg">
+              <div class="skill-bar-fill" data-width="80"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- --- Projects Section --- -->
+  <section id="projects" class="reveal">
+    <h2 class="section-title">My Projects</h2>
+    
+    <div class="projects-grid">
+      <!-- Centerpiece Project: Payroll Management System -->
+      <div class="project-card glass-panel reveal-delay-1">
+        <div class="project-image-wrapper">
+          <!-- Inline CSS styling mockup instead of external image for reliable rendering -->
+          <div style="background: linear-gradient(135deg, #1e1b4b 0%, #312e81 100%); width: 100%; height: 100%; display: flex; flex-direction: column; padding: 20px; font-family: var(--font-heading); color: white; justify-content: space-between;">
+            <div style="display: flex; justify-content: space-between; align-items: center;">
+              <span style="font-size: 10px; font-weight: bold; background: rgba(16, 185, 129, 0.2); color: #10b981; padding: 3px 8px; border-radius: 4px;">Node.js Backend Active</span>
+              <span style="font-size: 10px; color: #9ca3af;">db: payroll_db</span>
+            </div>
+            <div style="text-align: center; margin: 10px 0;">
+              <h4 style="font-size: 1.5rem; font-weight: 800; margin-bottom: 2px;">PAYROLL SYSTEM</h4>
+              <p style="font-size: 10px; color: #a78bfa; font-family: var(--font-body);">Salary Records • Salary Slips • Attendance</p>
+            </div>
+            <div style="background: rgba(255,255,255,0.05); padding: 8px; border-radius: 6px; border: 1px solid rgba(255,255,255,0.1); font-family: monospace; font-size: 9px; color: #38bdf8;">
+              SELECT name, net_salary FROM employees;
+            </div>
+          </div>
+        </div>
+        
+        <div class="project-details">
+          <div class="project-tags">
+            <span class="project-tag">Node.js</span>
+            <span class="project-tag">MySQL</span>
+            <span class="project-tag">HTML5 / CSS3</span>
+            <span class="project-tag">JavaScript</span>
+          </div>
+          <h3>Payroll Management System</h3>
+          <p>
+            A full-stack human resources platform focused on automated corporate calculations. 
+            Allows admins to track employees, compute monthly salaries based on attendance, generate neat PDF salary slips, 
+            and query structured employee balances from a secure MySQL database.
+          </p>
+          <div class="project-links">
+            <a href="#" class="project-link-btn"><i data-lucide="github"></i> Code Repository</a>
+            <a href="#" class="project-link-btn"><i data-lucide="external-link"></i> Live Demo</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Project 2: Taskify (Kanban Board) -->
+      <div class="project-card glass-panel reveal-delay-2">
+        <div class="project-image-wrapper">
+          <div style="background: linear-gradient(135deg, #1f2937 0%, #111827 100%); width: 100%; height: 100%; display: flex; flex-direction: column; padding: 20px; font-family: var(--font-heading); color: white; justify-content: space-between;">
+            <div style="display: flex; gap: 8px;">
+              <div style="width: 8px; height: 8px; border-radius: 50%; background: #ef4444;"></div>
+              <div style="width: 8px; height: 8px; border-radius: 50%; background: #f59e0b;"></div>
+              <div style="width: 8px; height: 8px; border-radius: 50%; background: #10b981;"></div>
+            </div>
+            <div style="display: flex; gap: 10px; margin: 15px 0;">
+              <!-- Columns mockup -->
+              <div style="flex: 1; background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.08); border-radius: 6px; padding: 6px;">
+                <div style="height: 4px; width: 15px; background: #a78bfa; border-radius: 2px; margin-bottom: 6px;"></div>
+                <div style="height: 12px; background: rgba(255,255,255,0.06); border-radius: 3px; margin-bottom: 4px;"></div>
+                <div style="height: 8px; background: rgba(255,255,255,0.04); border-radius: 3px;"></div>
+              </div>
+              <div style="flex: 1; background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.08); border-radius: 6px; padding: 6px;">
+                <div style="height: 4px; width: 15px; background: #38bdf8; border-radius: 2px; margin-bottom: 6px;"></div>
+                <div style="height: 8px; background: rgba(255,255,255,0.06); border-radius: 3px; margin-bottom: 4px;"></div>
+                <div style="height: 12px; background: rgba(255,255,255,0.04); border-radius: 3px;"></div>
+              </div>
+            </div>
+            <span style="font-size: 10px; color: #6b7280; font-family: var(--font-body);">Local Storage Enabled</span>
+          </div>
+        </div>
+        
+        <div class="project-details">
+          <div class="project-tags">
+            <span class="project-tag">JavaScript</span>
+            <span class="project-tag">HTML5</span>
+            <span class="project-tag">CSS3</span>
+            <span class="project-tag">LocalStorage</span>
+          </div>
+          <h3>Taskify: Kanban Board</h3>
+          <p>
+            An interactive project organization dashboard featuring drag-and-drop task items, sorting categories 
+            (Todo, In Progress, Review, Completed), and offline browser preservation. Custom tags and color indicators 
+            make team task tracking simpler.
+          </p>
+          <div class="project-links">
+            <a href="#" class="project-link-btn"><i data-lucide="github"></i> Code Repository</a>
+            <a href="#" class="project-link-btn"><i data-lucide="external-link"></i> Live Demo</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Project 3: DevPort REST API -->
+      <div class="project-card glass-panel reveal-delay-3">
+        <div class="project-image-wrapper">
+          <div style="background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%); width: 100%; height: 100%; display: flex; flex-direction: column; padding: 20px; font-family: monospace; color: #38bdf8; justify-content: space-between; font-size: 10px;">
+            <div style="color: #64748b;">HTTP/1.1 200 OK</div>
+            <div style="padding: 10px 0;">
+              <div>{</div>
+              <div style="padding-left: 10px;">"status": "success",</div>
+              <div style="padding-left: 10px;">"data": {</div>
+              <div style="padding-left: 20px;">"developer": "Mirshad",</div>
+              <div style="padding-left: 20px;">"active": true</div>
+              <div style="padding-left: 10px;">}</div>
+              <div>}</div>
+            </div>
+            <div style="color: #10b981; font-weight: bold; font-family: var(--font-heading);">GET /api/v1/projects</div>
+          </div>
+        </div>
+        
+        <div class="project-details">
+          <div class="project-tags">
+            <span class="project-tag">Node.js</span>
+            <span class="project-tag">Express</span>
+            <span class="project-tag">MySQL</span>
+            <span class="project-tag">JWT Auth</span>
+          </div>
+          <h3>DevPort: Developer REST API</h3>
+          <p>
+            A scalable backend web API designed for developer profiles and portfolios. Integrates secure JSON Web Token 
+            authentication, query sanitization, and structured rate limiting to ensure robust database responses under heavy loads.
+          </p>
+          <div class="project-links">
+            <a href="#" class="project-link-btn"><i data-lucide="github"></i> Code Repository</a>
+            <a href="#" class="project-link-btn"><i data-lucide="external-link"></i> Live Demo</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- --- Contact Section --- -->
+  <section id="contact" class="reveal">
+    <h2 class="section-title">Get In Touch</h2>
+    
+    <div class="contact-grid">
+      <!-- Contact Information Cards -->
+      <div class="contact-info">
+        <div class="contact-card glass-panel">
+          <h3>Let's Collaborate</h3>
+          <p>
+            I'm currently looking for internships, junior development roles, or freelance contracts. 
+            If you have an opening or a project idea, drop me a line!
+          </p>
+          
+          <div class="contact-details-list">
+            <div class="contact-detail-item">
+              <i data-lucide="mail"></i>
+              <span>mmirshad194@gmail.com</span>
+            </div>
+            <div class="contact-detail-item">
+              <i data-lucide="map-pin"></i>
+              <span>Malappuram,Kerala, India</span>
+            </div>
+            <div class="contact-detail-item">
+              <i data-lucide="clock"></i>
+              <span>Open to Remote & Relocation</span>
+            </div>
+          </div>
+          
+          <div class="social-links">
+            <a href="https://github.com" target="_blank" class="social-btn" aria-label="GitHub">
+              <i data-lucide="github"></i>
+            </a>
+            <a href="www.linkedin.com/in/mirshad-p8530" target="_blank" class="social-btn" aria-label="LinkedIn">
+              <i data-lucide="linkedin"></i>
+            </a>
+            <a href="https://twitter.com" target="_blank" class="social-btn" aria-label="Twitter">
+              <i data-lucide="twitter"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Contact Form Card -->
+      <div class="contact-form-card glass-panel">
+        <form id="contact-form" novalidate>
+          <div class="form-group">
+            <label for="name" class="form-label">Full Name</label>
+            <input type="text" id="name" class="form-control" placeholder="Your Name" required>
+          </div>
+          
+          <div class="form-group">
+            <label for="email" class="form-label">Email Address</label>
+            <input type="email" id="email" class="form-control" placeholder="your.email@domain.com" required>
+          </div>
+          
+          <div class="form-group">
+            <label for="subject" class="form-label">Subject</label>
+            <input type="text" id="subject" class="form-control" placeholder="How can I help you?" required>
+          </div>
+          
+          <div class="form-group">
+            <label for="message" class="form-label">Message</label>
+            <textarea id="message" class="form-control" placeholder="Tell me about your project or offer..." required></textarea>
+          </div>
+          
+          <button type="submit" class="btn btn-primary" style="width: 100%; justify-content: center;">
+            Send Message <i data-lucide="send"></i>
+          </button>
+          
+          <div id="form-message" class="form-message"></div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- --- Footer --- -->
+  <footer>
+    <div class="footer-content">
+      <a href="#hero" class="logo">
+        <span class="gradient-text">Mirshad.</span>
+      </a>
+      <p class="footer-text">&copy; 2026 Mirshad. All Rights Reserved. Built with Passion & Code.</p>
+    </div>
+  </footer>
+
+  <!-- Trigger Lucide Icons Rendering -->
+  <script type="module" src="script.js"></script>
+</body>
+</html>
